@@ -579,5 +579,5 @@ include_directories(Source/LibRawLite/internal)
 include_directories(Source/LibRawLite/libraw)
 include_directories(Source/LibRawLite/src)
 
-add_definitions(-DOPJ_STATIC -DLIBRAW_NODLL -DFREEIMAGE_LIB)
-add_library(FreeImage STATIC ${FreeImage_SRC})
+add_definitions(-DOPJ_STATIC -DLIBRAW_NODLL)
+add_library(FreeImage SHARED ${FreeImage_SRC})
