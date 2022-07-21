@@ -581,3 +581,9 @@ include_directories(Source/LibRawLite/src)
 
 add_definitions(-DOPJ_STATIC -DLIBRAW_NODLL)
 add_library(FreeImage SHARED ${FreeImage_SRC})
+
+install(TARGETS FreeImage
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+)
