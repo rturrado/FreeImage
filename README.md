@@ -3,3 +3,4 @@ Fork of [mlomb/FreeImage](https://github.com/mlomb/FreeImage), an open source li
 
 This fork:
 - Changed CMakeLists.txt to create FreeImage as a shared library.
+- Fixed cmake_minimum_required deprecation warning when adding FreeImage to another project.
