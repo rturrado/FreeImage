@@ -561,7 +561,7 @@ set(FreeImage_SRC
 	Source/DeprecationManager/DeprecationMgr.h
 )
 
-add_library(${PROJECT_NAME} STATIC ${FreeImage_SRC})
+add_library(${PROJECT_NAME} SHARED ${FreeImage_SRC})
 
 target_include_directories(${PROJECT_NAME} SYSTEM PRIVATE Source)
 target_include_directories(${PROJECT_NAME} SYSTEM PRIVATE Source/Metadata)
@@ -583,4 +583,4 @@ target_include_directories(${PROJECT_NAME} SYSTEM PRIVATE Source/LibRawLite/inte
 target_include_directories(${PROJECT_NAME} SYSTEM PRIVATE Source/LibRawLite/libraw)
 target_include_directories(${PROJECT_NAME} SYSTEM PRIVATE Source/LibRawLite/src)
 
-target_compile_options(${PROJECT_NAME} PRIVATE -DOPJ_STATIC -DLIBRAW_NODLL -DFREEIMAGE_LIB)
+target_compile_options(${PROJECT_NAME} PRIVATE -DOPJ_STATIC -DLIBRAW_NODLL)
